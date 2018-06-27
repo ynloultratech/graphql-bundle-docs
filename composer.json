@@ -1,0 +1,25 @@
+{
+  "name": "ynloultratech/graphql-bundle-docs",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "YNLO-Ultratech Development Team",
+      "email": "developer@ynloultratech.com",
+      "homepage": "https://github.com/ynloultratech"
+    }
+  ],
+  "require": {
+    "daux/daux.io": "^0.7.2"
+  },
+  "config": {
+    "bin-dir": "bin",
+    "preferred-install": "dist"
+  },
+  "scripts": {
+    "fetch_changelog" : "curl https://raw.githubusercontent.com/ynloultratech/graphql-bundle/master/CHANGELOG.md -o docs/99_CHANGELOG.md",
+    "fetch_upgrade" : "curl https://raw.githubusercontent.com/ynloultratech/graphql-bundle/master/UPGRADE.md -o docs/98_UPGRADE.md",
+    "prepare":  "composer fetch_changelog; composer fetch_upgrade",
+    "compile":  "bin/daux generate",
+    "build": "composer prepare; composer compile"
+  }
+}
