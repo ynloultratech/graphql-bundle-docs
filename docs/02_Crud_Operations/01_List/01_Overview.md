@@ -22,7 +22,7 @@ Now you can view a new available query in the GraphiQL explorer to request a pag
 ### Example Query:
 ````graphql
 query {
-  users(first: 5) {
+  allUsers(first: 5) {
     edges {
       node {
         username
@@ -31,6 +31,17 @@ query {
   }
 }
 ````
-For more details and information about cursor based pagination, 
-Edges & Nodes refer to the following [GraphQL Documentation](http://graphql.org/learn/pagination/#pagination-and-edges) 
+
+The query `allUsers` is is created with the following arguments:
+
+- **first**: fetch the first n records
+- **last**: fetch the latest n records
+- **after**: forward pagination cursor
+- **before**: backward pagination cursor
+- **search**: search in collection by string
+- **orderBy**: order the collection
+- **where**: [filter the collection](./02_Filters.md)
+
+> For more details and information about cursor based pagination,
+Edges & Nodes refer to the following [GraphQL Documentation](http://graphql.org/learn/pagination/#pagination-and-edges)
 or [Relay Specification](https://facebook.github.io/relay/graphql/connections.htm)

@@ -1,6 +1,6 @@
 # Naming Conventions
 
-GraphQLBundle use naming convention for many tasks 
+GraphQLBundle use naming convention for many tasks
 in order to avoid many unnecessary configurations.
 
 ## Files Locations
@@ -14,8 +14,9 @@ Some files require special locations to works without specific configuration
 - **Input Forms:**  `Form\Input\{Node}\{MutationName}Input` **e.g.** *Form\Input\User\AddUserInput*
 - **Types:**  `Type\{Name}Type` **e.g.** *Type\OrderStatusType*
 - **Extensions:**  `Extension\{InterfaceName}Extension` **e.g.** *Extension\HasAuthorExtension*
+- **Filters:**  `Filter\{Node}\{FilterName}` **e.g.** *Filter\Post\HasComments*
 
->> `{Node}` refer to the public node name and not the class name, 
+>> `{Node}` refer to the public node name and not the class name,
 if the class name is `User` and the public name is `Customer` the node name is the last one.
 
 
