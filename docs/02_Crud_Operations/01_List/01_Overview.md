@@ -32,7 +32,7 @@ query {
 }
 ````
 
-The query `allUsers` is is created with the following arguments:
+The query `allUsers` is created with the following arguments:
 
 - **first**: fetch the first n records
 - **last**: fetch the latest n records
