@@ -325,7 +325,7 @@ And your queries should now look like this:
 Alternatively to a generic filter type can create a custom filter only applicable to a specific node or interface. 
 
 Using the same previous **Post** entity, imagine that you need a filter like `hasComments` to display 
-only posts with or without comments. In this case you nee create a new filter.
+only posts with or without comments. In this case you need create a new filter.
 
 ````php
 <?php
