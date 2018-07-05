@@ -1,5 +1,8 @@
 GraphQLBundle provides a generic system to apply filters on collections of nodes.
 
+> Advanced filters are available since `v1.2`. In previous versions filters are used
+inside `filters` argument and does not have any configuration.
+
 By default, if a field is exposed and is related to a entity property (non virtual field), 
 a filter with the same name is automatically created and exposed in the list.
 
