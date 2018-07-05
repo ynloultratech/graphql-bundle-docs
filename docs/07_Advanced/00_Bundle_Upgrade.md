@@ -6,9 +6,9 @@ We will explain in this guide how the versions in this Bundle works and how upgr
 with some important aspects that must be taken into account when upgrading.
 
 First of all, you need to know that a change in our library not only may represents a change in your source code, 
-it can also lead to a major change in the consumers of your API. 
+it can also lead to a major change in the consumers of your API.
 
-In order to keep BC with your source code and your API consumer this Bundle 
+# Bundle Versions
 
 |Version|Description|
 |---|---|
