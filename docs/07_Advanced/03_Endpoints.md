@@ -100,6 +100,22 @@ class User implements NodeInterface
 In the above example `User` is restricted to `admin` endpoint. 
 All operations, fields etc related to this type will be automatically hidden in the schema.
 
+### In Forms
+
+Since `v1.2.8` can use endpoints in forms to configure form fields conditionally, example:
+
+````
+$builder->add(
+    'terms_agree',
+    null,
+    [
+       'required' => $options['endpoint'] === 'user',
+    ]
+);
+````
+The form options receive a argument called `endpoint` with the current endpoint name, 
+then you can configure your form based on given endpoint.
+
 # Alias
 
 Can use alias to define multiple endpoints without the need to define all of them every time.
