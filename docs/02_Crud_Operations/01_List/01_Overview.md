@@ -39,7 +39,7 @@ The query `allUsers` is created with the following arguments:
 - **after**: forward pagination cursor
 - **before**: backward pagination cursor
 - **search**: search in collection by string
-- **orderBy**: order the collection
+- **order**: order the collection
 - **where**: [filter the collection](./02_Filters.md)
 
 > For more details and information about cursor based pagination,
