@@ -53,6 +53,10 @@ services:
     App\Mutation\:
         resource: '../src/Mutation/*'
         public: true
+        
+    App\Subscriptions\:
+        resource: '../src/Subscriptions/*'
+        public: true        
 ````
 ## Resolver Types
 

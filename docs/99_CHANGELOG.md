@@ -1,3 +1,81 @@
+v1.2.8 - Unreleased
+----
+ *  Added support to use endpoints with forms
+ *  LexikJWTGraphiQLAuthenticator now trigger a event `lexik_jwt_authentication.on_authentication_success`
+ *  Fix bug with endpoints and inherited fields from interfaces
+
+v1.2.7 - 2019-01-30
+----
+ * Fix bug with LexikJWTGraphiQLAuthenticator when username does not exist
+ * Update LexikJWTGraphiQLAuthenticator constructor to support auto wiring
+ * Fix a bug when try to guess a form type for types with modifiers
+ 
+v1.2.6 - 2019-01-14
+----
+ * Now invalid types or malformed graphql requests are displayed as client errors (400 Bad Request)
+ * Fix documentation for `NodeComparisonExpression`
+ * Fix issue with validation and "children" in property path in symfony form ^4.1
+
+v1.2.5 - 2018-08-6
+----
+ * Fixed #12 Missing pagination `parentField` when set `@Pagination` annotation on existent field (EXTRA_LAZY)
+ * Fixed invalid `operation` name in forms when use namespace alias
+
+v1.2.4 - 2018-08-03
+----
+ * Fixed can't disable specific fields on `QueryList.orderBy`
+ 
+v1.2.3 - 2018-08-01
+----
+ * Fix exception in `cleanUp` plugin when some definition is empty
+ * Added support to filter nodes using empty array to select records without relation
+ 
+v1.2.2 - 2018-07-25
+----
+ * Added support to use collection filters for interfaces (polymorphic nodes)
+ * Added support to set filters type with modifiers `[]` or `!` 
+ * Added support to use page based pagination
+ * Fixed issue checking permissions on specific objects
+ * Fixed fields from interface use same endpoints as interface definition
+ * Fixed issue in lists not ordering correctly parent fields
+ * Fixed issue when use @Pagination to customize @QueryList options
+ * Fixed custom filter description does not appear in schema
+ * Fixed resolve correctly extensions related to interface definitions
+ * Added support to use Xdebug to debug queries using the GraphiQL API Explorer
+  
+v1.2.1 - 2018-07-16
+----
+ * Added `CollectionComparisonOperator` as default comparison operator for array and enums
+ * Added support to use custom namespaces for queries and mutations
+ * Added support to use `alias` to customize name for namespaced operations
+ * Allow set custom type name and description for mutations `input` argument
+ * Added `plural` in constraint violation error for pluralizing the violation message
+ * Fixed check only forbidden type if the operation does not have any endpoint configured
+ * Added behat step to verify GraphQL error code
+ * Added behat step to verify not existing row in table
+ * Added support to use endpoints and others options in arguments
+ * minors bugs fixed
+  
+v1.2.0 - 2018-07-09
+----
+ * Some minors bugs fixed
+ * Added input type guesser to guess the correctness GraphQL type in forms fields [#10](https://github.com/ynloultratech/graphql-bundle/issues/10)
+ * Removed experimental `roles` and role AuthorizationChecker.
+ * Added `Date` type using *ISO-8601* format: 2018-06-21
+ * Added `Time` type using *ISO-8601* format: 13:18:05
+ * Fixed Private properties marked as @Field from parent objects are not correctly inherited
+ * Added `where` in lists to support filters with advanced settings
+ * Deprecated `filter` in list pagination in favor of more advanced `where` field
+ * Added `graphql.operationStart` and `graphql.operationEnd` events
+ * Added `order` as better alternative to sort collections of nodes
+ * Deprecated `orderBy` in collections in favor of `order` which uses enum for field names
+ * Fixed inherited interface properties override object properties
+ * Improved list search and allow configure `searchFields` in QueryList annotation 
+ 
+v1.1.3 - 2018-07-03
+----
+ * Fixed API endpoint route to allow OPTIONS method (required by GraphiQL and other tools).
+
 v1.1.2 - 2018-06-27
 ----
  * Handle symfony HTTP exceptions to display related status code error instead of "Unknown error"

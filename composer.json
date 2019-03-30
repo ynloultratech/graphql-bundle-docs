@@ -9,7 +9,7 @@
     }
   ],
   "require": {
-    "daux/daux.io": "^0.7.2"
+    "daux/daux.io": "^0.9.0"
   },
   "config": {
     "bin-dir": "bin",

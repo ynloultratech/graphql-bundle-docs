@@ -10,6 +10,7 @@ Some files require special locations to works without specific configuration
 - **Queries:**  `Query\{Node}\{QueryName}` **e.g.** *Query\User\GetUserByUsername*
 - **Fields:**  `Query\{Node}\Field\{FieldName}` **e.g.** *Query\User\Field\IsCurrentUser*
 - **Mutations:**  `Mutation\{Node}\{MutationName}` **e.g.** *Mutation\User\AddUser*
+- **Subscriptions:**  `Subscription\{Node}\{SubscriptionName}` **e.g.** *Mutation\User\OnAddUser*
 - **MutationsPayload:**  `Mutation\{Node}\{MutationName}Payload` **e.g.** *Mutation\User\AddUserPayload*
 - **Input Forms:**  `Form\Input\{Node}\{MutationName}Input` **e.g.** *Form\Input\User\AddUserInput*
 - **Types:**  `Type\{Name}Type` **e.g.** *Type\OrderStatusType*

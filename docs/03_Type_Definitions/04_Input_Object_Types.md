@@ -8,7 +8,7 @@ All types in GraphQL are of two categories: input and output.
 Obviously, NonNull and List types belong to both categories depending on their inner type.
 
 Input objects are used for mutations or arguments for queries, 
-in case of mutations the GraphQLBundle recommend the use of [Symfony Forms for Mutation Inputs](../04_Queries_&_Mutations/02_Mutations.md) 
+in case of mutations the GraphQLBundle recommend the use of [Symfony Forms for Mutation Inputs](../04_GraphQL_Operations/02_Mutations.md) 
 , but if you need in some special case can use input objects too.
 
 # Defining Input Objects
